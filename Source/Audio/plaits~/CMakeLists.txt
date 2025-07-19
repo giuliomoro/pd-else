@@ -1,7 +1,13 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.7)
 
+set(PD_PATH "/usr/local/include/libpd/")
+set(BASE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../../../")
+set(BASE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/../../../")
+set(PD_OUTPUT_PATH "${BASE_PATH}/else" CACHE STRING "Externals binary path")
 # Project name and version
 project(plaits)
+
+include(${BASE_PATH}/pd.cmake)
 
 # Add the source files
 set(PLAITS_SOURCES
