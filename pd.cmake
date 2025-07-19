@@ -14,7 +14,7 @@ endif()
 set(PD_CMAKE_PATH ${CMAKE_CURRENT_LIST_DIR})
 # The path to Pure Data sources.
 set(PD_PATH)
-set(PD_SOURCES_PATH ${PD_PATH}/src)
+set(PD_SOURCES_PATH "${PD_PATH}/src" CACHE PATH "Override for \${PD_PATH}/src")
 # The output path for the externals.
 set(PD_OUTPUT_PATH)
 if(WIN32)
